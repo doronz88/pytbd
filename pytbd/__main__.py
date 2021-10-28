@@ -128,7 +128,7 @@ def cli_find_symbol(path, symbol):
 @click.argument('path', type=click.Path(exists=True, file_okay=False, dir_okay=True))
 @click.argument('arch')
 def cli_append_arch(path, arch):
-    """ appench given arch to all .tbd files """
+    """ append given arch to all .tbd files """
     append_arch(path, arch)
 
 
